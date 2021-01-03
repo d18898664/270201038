@@ -1,0 +1,9 @@
+liste = [("Jon",15), ("Ned",45), ("Arya",9), ("Catelyn",44), ("Bran",10)]
+age_list = list()
+for k,v in liste:
+    if v > 18:
+        age_list.append(k)
+    else:
+        continue
+for i in age_list:
+    print(i)

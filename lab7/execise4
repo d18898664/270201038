@@ -1,0 +1,27 @@
+employees = dict()
+maas = list()
+liste = list()
+for i in range(5):
+
+    name = input("Please enter a name:")
+    salary = int(input("PLease enter salary:"))
+    maas.append(salary)
+    employees[name] = salary
+print(employees)
+counter = 0
+for k,v in employees.items():
+    if v >= maas[0]:
+        counter += 1
+    if v >= maas[1]:
+        counter += 1
+    if v >= maas[2]:
+        counter += 1
+    if v >= maas[3]:
+        counter += 1
+    if v >= maas[4]:
+        counter += 1
+    for j in range(1):
+        if counter>=3:
+            liste.append(k)
+    counter = 0
+print(liste)

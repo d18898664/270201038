@@ -1,0 +1,17 @@
+books = ["ULYSSES","ANIMAL FARM","BRAVE NEW WORLD","ENDER'S GAME"]
+liste = []
+for i in books:
+    books_tuples = (len(i),len(set(i)))
+    liste.append(books_tuples)
+book_dict = {}
+liste2 = list()
+for k in range(len(books)):
+    book_dict[books[k]] = liste[k]
+for z in book_dict.values():
+    liste_cover = list(z)
+    liste2.append((liste_cover[0],liste_cover[1],((liste_cover[0]+liste_cover[1])//2)))
+
+liste2 = tuple(liste2)
+for k in range(len(books)):
+    book_dict.update({books[k]:liste2[k]})
+print(book_dict)

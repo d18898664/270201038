@@ -1,0 +1,19 @@
+x = "Alo123"
+
+while True:
+    counternum = 0
+    counterlower = 0
+    counterupper = 0
+    for i in x:
+       if i.isalnum() == True:
+           counternum +=1
+       elif i.islower() == True:
+           counterlower += 1
+       elif i.isupper() == True:
+           counterupper += 1
+    if counternum > 0 and counterlower > 0 and counterupper > 0:
+        print("Valid password!")
+        break
+    else:
+        print("Invalid password!")
+        break

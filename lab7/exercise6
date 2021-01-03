@@ -1,0 +1,12 @@
+x = "Alo123"
+counternum = 0
+counterlower = 0
+counterupper = 0
+for i in x:
+    if i.isalnum() == True:
+        counternum += 1
+    elif i.islower() == True:
+        counterlower += 1
+    elif i.isupper() == True:
+        counterupper += 1
+print(counterupper)
